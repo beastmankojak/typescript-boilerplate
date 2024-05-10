@@ -1,14 +1,13 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
+  "extends": [
+    "@tsconfig/node20/tsconfig.json",
+    "@tsconfig/strictest/tsconfig.json"
+  ],
   "compilerOptions": {
     "rootDir": "./src" /* Specify the root folder within your source files. */,
     "resolveJsonModule": true /* Enable importing .json files. */,
     "sourceMap": true /* Create source map files for emitted JavaScript files. */,
     "outDir": "./dist" /* Specify an output folder for all emitted files. */,
     "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied 'any' type. */
-  },
-  "ts-node": {
-    "files": true,
-    "transpileOnly": true
   }
 }
