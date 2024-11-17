@@ -1,4 +1,4 @@
-FROM node:lts-bookworm as builder
+FROM node:lts-bookworm AS builder
 RUN npm i -g pnpm \
   && apt-get update \
   && apt-get install -y --no-install-recommends dumb-init

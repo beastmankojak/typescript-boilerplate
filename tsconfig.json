@@ -9,5 +9,6 @@
     "sourceMap": true /* Create source map files for emitted JavaScript files. */,
     "outDir": "./dist" /* Specify an output folder for all emitted files. */,
     "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied 'any' type. */
-  }
+  },
+  "include": ["./src/**/*"]
 }
