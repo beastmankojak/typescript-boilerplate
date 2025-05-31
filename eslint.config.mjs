@@ -1,6 +1,7 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import nodelint from 'eslint-plugin-n';
+import { globalIgnores } from 'eslint/config';
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -9,4 +10,5 @@ export default tseslint.config(
   {
     rules: { 'n/no-unpublished-import': ['error', { ignoreTypeImport: true }] },
   },
+  [globalIgnores(['dist/**/*'])],
 );
