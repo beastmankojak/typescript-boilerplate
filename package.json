@@ -10,25 +10,32 @@
     "lint": "eslint",
     "start": "node dist/index"
   },
+  "engines": {
+    "node": ">=22.16.0"
+  },
   "keywords": [],
   "author": "beastman.kojak",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.14.0",
-    "@tsconfig/node22": "^22.0.0",
+    "@eslint/js": "^9.28.0",
+    "@tsconfig/node22": "^22.0.2",
     "@tsconfig/strictest": "^2.0.5",
     "@types/eslint__js": "^8.42.3",
-    "@types/node": "^22.9.0",
-    "eslint": "^9.14.0",
+    "@types/node": "^22.15.29",
+    "eslint": "^9.28.0",
     "eslint-config-prettier": "^9.1.0",
-    "globals": "^15.12.0",
-    "nodemon": "^3.1.7",
-    "prettier": "^3.3.3",
-    "tsx": "^4.19.2",
-    "typescript": "^5.6.3",
-    "typescript-eslint": "^8.14.0"
+    "eslint-plugin-n": "^17.18.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.0"
   },
   "dependencies": {
-    "dotenv": "^16.4.5"
-  }
+    "dotenv": "^16.5.0",
+    "typescript-boilerplate": "link:"
+  },
+  "files": [
+    "/dist/**/*"
+  ]
 }

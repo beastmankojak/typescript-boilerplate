@@ -1,10 +1,12 @@
-import globals from 'globals';
-import pluginJs from '@eslint/js';
+import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
+import nodelint from 'eslint-plugin-n';
 
 export default tseslint.config(
-  { files: ['./src/**/*.{js,mjs,cjs,ts}', './*.{js,mjs,cjs,ts}'] },
-  { languageOptions: { globals: globals.node } },
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
+  nodelint.configs['flat/recommended'],
+  {
+    rules: { 'n/no-unpublished-import': ['error', { ignoreTypeImport: true }] },
+  },
 );
